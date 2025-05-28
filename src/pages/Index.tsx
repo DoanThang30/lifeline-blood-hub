@@ -1,4 +1,5 @@
 
+import React from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
@@ -7,7 +8,7 @@ import DonationSteps from "@/components/DonationSteps";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="min-h-screen">
       <Header />
