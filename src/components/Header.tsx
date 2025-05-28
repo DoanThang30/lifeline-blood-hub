@@ -1,52 +1,41 @@
 
 import { Button } from "@/components/ui/button";
-import { Heart, Menu, X } from "lucide-react";
+import { Heart } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-black text-white relative z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-blood-red p-2 rounded-lg">
-              <Heart className="h-6 w-6 text-white animate-pulse-heart" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">LifeLine</h1>
-              <p className="text-xs text-gray-500">Blood Hub</p>
-            </div>
+            <Heart className="h-8 w-8 text-blood-red" />
+            <span className="text-xl font-bold">LifeLine</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-blood-red transition-colors">
+            <a href="#home" className="text-white hover:text-blood-red transition-colors">
               Home
             </a>
-            <a href="#donate" className="text-gray-700 hover:text-blood-red transition-colors">
-              Donate
+            <a href="#about" className="text-white hover:text-blood-red transition-colors">
+              About Us
             </a>
-            <a href="#request" className="text-gray-700 hover:text-blood-red transition-colors">
-              Request Blood
+            <a href="#find" className="text-white hover:text-blood-red transition-colors">
+              Find Blood
             </a>
-            <a href="#about" className="text-gray-700 hover:text-blood-red transition-colors">
-              About
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-blood-red transition-colors">
-              Contact
+            <a href="#register" className="text-white hover:text-blood-red transition-colors">
+              Register Now
             </a>
           </nav>
 
-          {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" className="border-blood-red text-blood-red hover:bg-blood-red hover:text-white">
-              Sign In
-            </Button>
-            <Button className="bg-blood-red hover:bg-blood-red-dark">
-              Donate Now
+          {/* Login Button */}
+          <div className="hidden md:flex">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+              Log In
             </Button>
           </div>
 
@@ -55,37 +44,33 @@ const Header = () => {
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            <div className="w-6 h-6 flex flex-col justify-center space-y-1">
+              <div className="w-full h-0.5 bg-white"></div>
+              <div className="w-full h-0.5 bg-white"></div>
+              <div className="w-full h-0.5 bg-white"></div>
+            </div>
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-gray-700">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-gray-700 hover:text-blood-red transition-colors">
+              <a href="#home" className="text-white hover:text-blood-red transition-colors">
                 Home
               </a>
-              <a href="#donate" className="text-gray-700 hover:text-blood-red transition-colors">
-                Donate
+              <a href="#about" className="text-white hover:text-blood-red transition-colors">
+                About Us
               </a>
-              <a href="#request" className="text-gray-700 hover:text-blood-red transition-colors">
-                Request Blood
+              <a href="#find" className="text-white hover:text-blood-red transition-colors">
+                Find Blood
               </a>
-              <a href="#about" className="text-gray-700 hover:text-blood-red transition-colors">
-                About
+              <a href="#register" className="text-white hover:text-blood-red transition-colors">
+                Register Now
               </a>
-              <a href="#contact" className="text-gray-700 hover:text-blood-red transition-colors">
-                Contact
-              </a>
-              <div className="flex flex-col space-y-2 pt-4 border-t border-gray-100">
-                <Button variant="outline" className="border-blood-red text-blood-red hover:bg-blood-red hover:text-white">
-                  Sign In
-                </Button>
-                <Button className="bg-blood-red hover:bg-blood-red-dark">
-                  Donate Now
-                </Button>
-              </div>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black mt-4">
+                Log In
+              </Button>
             </nav>
           </div>
         )}

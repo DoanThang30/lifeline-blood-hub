@@ -1,8 +1,9 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import DonationProcess from "@/components/DonationProcess";
+import Mission from "@/components/Mission";
+import WhyDonate from "@/components/WhyDonate";
+import DonationSteps from "@/components/DonationSteps";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 
@@ -11,8 +12,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <Features />
-      <DonationProcess />
+      <Mission />
+      <WhyDonate />
+      <DonationSteps />
       <Stats />
       <Footer />
     </div>
