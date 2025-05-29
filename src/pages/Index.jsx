@@ -8,7 +8,7 @@ import DonationSteps from "@/components/DonationSteps";
 import Stats from "@/components/Stats";
 import Footer from "@/components/Footer";
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
