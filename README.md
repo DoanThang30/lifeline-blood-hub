@@ -1,81 +1,73 @@
+# Welcome to your Lovable project
 
-# LifeLine Blood Hub
+## Project info
 
-A modern web application connecting blood donors with those in need, making blood donation accessible, safe, and efficient for communities worldwide.
+**URL**: https://lovable.dev/projects/4b0cca9a-5d28-4dfd-bdd3-d3dead7685bc
 
-## 🩸 About
+## How can I edit this code?
 
-LifeLine Blood Hub is a comprehensive platform designed to streamline the blood donation process. Our mission is to save lives by connecting willing donors with hospitals, blood banks, and individuals in urgent need of blood transfusions.
+There are several ways of editing your application.
 
-## ✨ Features
+**Use Lovable**
 
-- **Donor Registration**: Easy signup process for blood donors
-- **Blood Request System**: Quick requests for specific blood types
-- **Donation Centers**: Find nearby donation centers and hospitals
-- **Appointment Scheduling**: Book donation appointments online
-- **Health Screening**: Pre-donation health questionnaires
-- **Donation History**: Track your donation impact over time
-- **Emergency Alerts**: Urgent blood need notifications
-- **Blood Inventory**: Real-time blood stock levels
+Simply visit the [Lovable Project](https://lovable.dev/projects/4b0cca9a-5d28-4dfd-bdd3-d3dead7685bc) and start prompting.
 
-## 🚀 Tech Stack
+Changes made via Lovable will be committed automatically to this repo.
 
-- **Frontend**: React 18 with Vite
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **Language**: TypeScript/JavaScript
-- **Icons**: Lucide React
-- **Notifications**: Sonner toast system
-- **Data Visualization**: Recharts
-- **Routing**: React Router DOM
+**Use your preferred IDE**
 
-## 🛠️ Installation
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/lifeline-blood-hub.git
-cd lifeline-blood-hub
-```
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-2. Install dependencies:
-```bash
-npm install
-```
+Follow these steps:
 
-3. Start the development server:
-```bash
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+**Edit a file directly in GitHub**
 
-## 📁 Project Structure
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```
-src/
-├── components/           # Reusable UI components
-│   ├── ui/              # Base UI components (shadcn/ui)
-│   ├── DonationProcess.jsx
-│   ├── Features.jsx
-│   ├── Hero.jsx
-│   └── ...
-├── pages/               # Page components
-├── hooks/               # Custom React hooks
-├── lib/                 # Utility functions
-└── main.jsx            # Application entry point
-```
+**Use GitHub Codespaces**
 
-## 🤝 Contributing
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+## What technologies are used for this project?
 
-## 📝 License
+This project is built with:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## 🆘 Support
+## How can I deploy this project?
 
-If you encounter any issues or have questions, please open an issue on GitHub.
+Simply open [Lovable](https://lovable.dev/projects/4b0cca9a-5d28-4dfd-bdd3-d3dead7685bc) and click on Share -> Publish.
 
----
+## Can I connect a custom domain to my Lovable project?
 
-**Together, we can save lives through the power of blood donation.**
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
