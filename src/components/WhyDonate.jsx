@@ -1,5 +1,5 @@
 
-import { Heart, Stethoscope, Users } from "lucide-react";
+import { Heart, Stethoscope, Globe } from "lucide-react";
 
 const WhyDonate = () => {
   const reasons = [
@@ -10,11 +10,11 @@ const WhyDonate = () => {
     },
     {
       icon: Stethoscope,
-      title: "You can get a free medical check up",
+      title: "You can get a free medical check-up",
       description: "Every donation includes a complimentary health screening to check your vitals and overall health."
     },
     {
-      icon: Users,
+      icon: Globe,
       title: "You can make a difference in your community",
       description: "Your donation directly helps patients in local hospitals and emergency situations in your area."
     }
@@ -29,9 +29,9 @@ const WhyDonate = () => {
           {reasons.map((reason, index) => {
             const IconComponent = reason.icon;
             return (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-blood-red-light rounded-full flex items-center justify-center mx-auto mb-6">
-                  <IconComponent className="h-8 w-8 text-blood-red" />
+              <div key={index} className="text-center bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <IconComponent className="h-8 w-8 text-red-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4 leading-tight">
                   {reason.title}

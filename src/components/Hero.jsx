@@ -3,25 +3,29 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen bg-cover bg-center bg-gray-800">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      
-      {/* Background image placeholder - in a real implementation, you'd use the actual image */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-600 opacity-30"></div>
+    <section className="relative h-screen bg-cover bg-center">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/lovable-uploads/472fd819-5de4-425c-a8ac-d26a72d34426.png')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-        <div className="max-w-2xl">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
+        <div className="max-w-2xl text-white">
+          <h1 className="text-6xl md:text-7xl font-bold mb-8 leading-tight">
             EVERY<br />
-            <span className="text-blood-red">DROP</span><br />
+            <span className="text-red-600">DROP</span><br />
             COUNTS
           </h1>
           
           <Button 
             size="lg" 
-            className="bg-blood-red hover:bg-blood-red-dark text-white px-8 py-4 text-lg font-semibold"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold rounded-md"
           >
             Donate Now
           </Button>
